@@ -11,13 +11,12 @@ BOT_USERNAME: Final = '@facial_recognizer_bot'
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Hello!')
 
-def handle_response(text: str) -> str:
-    processed: str = text.lower()
+# def handle_response(text: str) -> str:
+#     processed: str = text.lower()
 
 if __name__ == '__main__':
     print('Starting bot...')
     app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler('start', start_command))
-
-    # polls the bot
-    app.run_polling(poll_interval=3)
+    
+    app.run_polling()
