@@ -18,6 +18,25 @@ footer img {
     height: 12rem;
 }
 
+.team {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team li {
+    text-align: center;
+    flex: 1; 
+    max-width: 30%; 
+}
+
+.team li img {
+    width: 50%; 
+    height: auto; 
+}
+
 nav a {
     font-weight: bold;
 }
+
