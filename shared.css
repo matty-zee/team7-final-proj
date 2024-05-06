@@ -17,3 +17,7 @@ footer img {
     transform: scale(0.2);
     height: 12rem;
 }
+
+nav a {
+    font-weight: bold;
+}
